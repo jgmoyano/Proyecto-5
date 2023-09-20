@@ -1,0 +1,16 @@
+.navbar {
+    background: url(../assets/fondopizarra.jpg);
+}
+
+.container-fluid {
+    flex-direction: column;
+}
+
+.nav-link:hover {
+    -webkit-text-fill-color: rgb(182, 158, 25);
+}
+
+.nav-link{
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
