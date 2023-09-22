@@ -24,8 +24,8 @@ export const NavBar = () => {
                   Comer</h5>
                 </a>
                 <ul className="dropdown-menu bg-secondary">
-                  <li><Link className="dropdown-item" to="/Proyecto-4/reservas">Reservar en Local</Link></li>
-                  <li><a className="dropdown-item" href="#">Pedir a Domicilio</a></li>
+                  <li><Link className="dropdown-item text-light hover-dark" to="/Proyecto-4/reservas">Reservar en Local</Link></li>
+                  <li><Link className="dropdown-item text-light" to="/Proyecto-4/">Pedir a Domicilio</Link></li>
                 </ul>
               </li>
             </ul>

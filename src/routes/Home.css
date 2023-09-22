@@ -2,3 +2,15 @@
 background: url(../assets/fondopizarra.jpg);
 color: aliceblue;
 }
+h2{
+padding-top: 20px;
+}
+
+p{
+    max-width: 1000px;
+}
+
+.containerparrafo{
+    display: flex;
+    justify-content: center;
+}

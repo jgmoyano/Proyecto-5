@@ -14,3 +14,12 @@
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+a.nav-link.dropdown-toggle.text-light {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-item.text-light:hover{
+background-color: rgb(182, 158, 25);
+}
