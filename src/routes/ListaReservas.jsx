@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import Table from 'react-bootstrap/Table'
 import { collection, getDocs } from 'firebase/firestore'
 import { db } from '../firebase'
-import Button from 'react-bootstrap/Button'
 
 export function ListaReservas(){
 

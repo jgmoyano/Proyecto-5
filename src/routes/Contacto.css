@@ -1,0 +1,14 @@
+.containercontacto{
+    display: flex;
+      
+}
+.containercontacto1{
+    width:70%;
+}
+.containercontacto2{
+    background:
+    url(../assets/contacto.jpg) no-repeat ;
+    background-size: cover;
+    width:30%;
+    height: 500px;
+}

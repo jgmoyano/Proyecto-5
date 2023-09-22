@@ -17,7 +17,7 @@ export const NavBar = () => {
                 <Link className="nav-link text-light" to="/Proyecto-4/menu"><h5>Menu</h5></Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-light" href="#"><h5>Contacto</h5></a>
+                <Link className="nav-link text-light" to="/Proyecto-4/contacto"><h5>Contacto</h5></Link>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><h5>
@@ -25,7 +25,7 @@ export const NavBar = () => {
                 </a>
                 <ul className="dropdown-menu bg-secondary">
                   <li><Link className="dropdown-item text-light hover-dark" to="/Proyecto-4/reservas">Reservar en Local</Link></li>
-                  <li><Link className="dropdown-item text-light" to="/Proyecto-4/">Pedir a Domicilio</Link></li>
+                  <li><Link className="dropdown-item text-light" to="/Proyecto-4/domicilio">Pedir a Domicilio</Link></li>
                 </ul>
               </li>
             </ul>

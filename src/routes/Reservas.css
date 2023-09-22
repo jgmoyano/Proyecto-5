@@ -12,3 +12,7 @@ input{
     flex-wrap: wrap;
     align-content: center;
 }
+
+h6{
+    text-decoration: none;
+}
