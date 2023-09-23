@@ -1,8 +1,4 @@
-# React + Vite
+# PROYECTO N°4 _ JUAN MOYANO ANFOSSI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Proyecto consiste en una Restaurant App realizada con React y Firebase.
+La App corresponde a la pagina web de una pizzeria, en la cual se puede ver el menu, formulario de contacto y realizar reservas. Para el despliegue del menu se utilizaron props, para el formulario de contacto se utilizo react-bootstrap y para el sistema de reserva se utilizo Firestore de Firebase.

@@ -23,3 +23,9 @@ a.nav-link.dropdown-toggle.text-light {
 .dropdown-item.text-light:hover{
 background-color: rgb(182, 158, 25);
 }
+
+@media (max-width:540px) {
+    .container-fluid img  {
+        width: 250px;
+    }
+}

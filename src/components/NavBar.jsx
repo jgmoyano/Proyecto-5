@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export const NavBar = () => {
   return (
     <div className='navbar-fluid'>
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar navbar-expand">
         <div className="container-fluid">
           <img src={logo} alt="" />
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
