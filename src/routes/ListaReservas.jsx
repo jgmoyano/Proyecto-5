@@ -3,7 +3,7 @@ import Table from 'react-bootstrap/Table'
 import { collection, getDocs } from 'firebase/firestore'
 import { db } from '../firebase'
 
-export function ListaReservas(){
+export function ListaReservas() {
 
     const reservasCollectionRef = collection(db, 'reservas')
     const [reservas, setReservas] = useState([])
@@ -18,7 +18,8 @@ export function ListaReservas(){
     }, [])
 
     return (
-        <Table striped bordered hover variant="dark">
+        <>
+            <Table striped bordered hover variant="dark">
                 <thead>
                     <tr>
                         <th>Fecha</th>
@@ -43,5 +44,22 @@ export function ListaReservas(){
                     }
                 </tbody>
             </Table>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        </>
     )
 }

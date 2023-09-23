@@ -17,11 +17,23 @@ export const Reservas = () => {
     const [nombre, setNombre] = useState('')
     const [cantidad, setCantidad] = useState('')
 
-
+    const sendAlert = () => {
+        alert('Su reserva fue agendada exitosamente, espere el correo de confirmacion')
+    }
 
     const createReserva = async () => {
         await addDoc(reservasCollectionRef, { fecha, hora, nombre, cantidad })
+
+        setFecha('')
+        setHora('')
+        setNombre('')
+        setCantidad('')
+
+        sendAlert()
+
     }
+
+
 
 
     return (
@@ -39,10 +51,18 @@ export const Reservas = () => {
                     onChange={(date) => setFecha(date)} />
 
                 <input
-                    type="string"
+                    type="list"
+                    list='horas'
                     placeholder='Hora'
                     value={hora}
                     onChange={(event) => setHora(event.target.value)} />
+                <datalist id='horas'>
+                    <option value='18:00' />
+                    <option value='19:00' />
+                    <option value='20:00' />
+                    <option value='21:00' />
+                    <option value='22:00' />
+                </datalist>
 
                 <input
                     type="string"

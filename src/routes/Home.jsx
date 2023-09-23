@@ -12,6 +12,8 @@ export const Home = () => {
     <p>Ubicados en el corazón de Talca, somos una pizzeria familiar que pone todo su esfuerzo en entregar un producto de calidad, 
     utilizando ingredientes seleccionados de primer nivel, logrando así la receta mas fiel de la clasica pizza napoletana.</p>
     </div>
+    <br />
+    <br />
     </>
   )
 }
