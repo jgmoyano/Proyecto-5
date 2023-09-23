@@ -26,7 +26,6 @@ export const Domicilio = () => {
         <br />
         <br />
         <br />
-        <br />
       </div>
     </>
   )

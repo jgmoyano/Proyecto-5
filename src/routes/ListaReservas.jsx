@@ -59,7 +59,6 @@ export function ListaReservas() {
             <br />
             <br />
             <br />
-            <br />
         </>
     )
 }
