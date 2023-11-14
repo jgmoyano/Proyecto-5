@@ -1,11 +1,8 @@
 import { Routes, Route } from 'react-router-dom'
 import { NavBar } from './components/NavBar'
 import { Home } from './routes/Home'
-import { Menu } from './routes/Menu'
-import { Reservas } from './routes/Reservas'
-import { ListaReservas } from './routes/ListaReservas'
+import { Productos } from './routes/Productos'
 import { Contacto } from './routes/Contacto'
-import { Domicilio } from './routes/Domicilio'
 import { Footer } from './components/Footer'
 
 export const App = () => {
@@ -13,12 +10,9 @@ export const App = () => {
     <>
       <NavBar />
       <Routes>
-        <Route path='/Proyecto-4/' element={<Home />} />
-        <Route path='/Proyecto-4/menu' element={<Menu />} />
-        <Route path='/Proyecto-4/reservas' element={<Reservas />} />
-        <Route path='/Proyecto-4/lista-reservas' element={<ListaReservas />} />
-        <Route path='/Proyecto-4/contacto' element={<Contacto />} />
-        <Route path='/Proyecto-4/domicilio' element={<Domicilio />} />
+        <Route path='/Proyecto-5/' element={<Home />} />
+        <Route path='/Proyecto-5/productos' element={<Productos />} />
+        <Route path='/Proyecto-5/contacto' element={<Contacto />} />
       </Routes>
       <Footer/>
     </>

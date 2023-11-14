@@ -48,15 +48,15 @@ export const Contacto = () => {
                 </div>
                 <div className='col mt-4'>
                 <h5>UBICACION</h5>
-                <h7>Calle 5 Norte 3670, Talca</h7>
+                <h7>Calle 2 1/3 Norte 4680, Talca</h7>
                 </div>
                 <div className='col mt-4'>
                 <h5>CORREO</h5>
-                <h7>contacto@pizzeriamilano.cl</h7>
+                <h7>contacto@climbingworld.cl</h7>
                 </div>
                 <div className='col mt-4'>
                 <h5>HORARIO</h5>
-                <h7>Lunes a Domingo de 18:00 a 24:00 Hrs</h7>
+                <h7>Lunes a Viernes de 09:00 a 18:00 Hrs</h7>
                 </div>
 
             </div>
