@@ -11,5 +11,3 @@ export const signupService = async (data) => {
     const response = await axios.post(`${URL_ROOT}/signup`, data)
     return response.data
 }
-
-console.log(URL_ROOT)

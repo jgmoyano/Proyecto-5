@@ -1,0 +1,33 @@
+section {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin: 50px;
+}
+
+form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    display: flex;
+    width: 400px;
+    background-color: rgb(226, 226, 226);
+}
+
+button {
+    display: flex;
+    padding: 5px;
+    border: solid 1px;
+    border-radius: 1px;
+    background-color: rgb(24, 82, 128);
+    width: 100px;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+}

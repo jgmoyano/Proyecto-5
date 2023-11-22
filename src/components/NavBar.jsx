@@ -3,6 +3,7 @@ import logo from '../assets/logocw.png'
 import { Link } from 'react-router-dom'
 
 export const NavBar = () => {
+  const isAuthenticated = localStorage.getItem("token")
   return (
     <div className='navbar-fluid'>
       <nav className="navbar navbar-expand">
@@ -20,7 +21,7 @@ export const NavBar = () => {
                 <Link className="nav-link text-light" to="/Proyecto-5/contacto"><h5>Contacto</h5></Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-light" to="/Proyecto-5/login"><h5>Iniciar Sesión</h5></Link>
+                {isAuthenticated ? <span onClick={() => localStorage.removeItem("token")}>Cerrar sesión</span> : <Link className="nav-link text-light" to="/Proyecto-5/login"><h5>Iniciar Sesión</h5></Link> }
               </li>
             </ul>
           </div>

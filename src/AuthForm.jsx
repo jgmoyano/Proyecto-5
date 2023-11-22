@@ -1,11 +1,14 @@
 import { useContext, useState } from "react";
 import { loginService, signupService } from "./services/user";
 import { UserContext } from "./context/UserContext";
+import "./AuthForm.css"
+import { useNavigate } from "react-router-dom";
 
 export const AuthForm = () => {
   const [isMember, setIsMember] = useState(false);
-  const {token, setToken } = useContext(UserContext)
-
+  const { token, setToken } = useContext(UserContext)
+  const navigate = useNavigate();
+  
   const onSubmit = async (e) => {
     e.preventDefault();
 
@@ -14,22 +17,30 @@ export const AuthForm = () => {
 
     if (isMember) {
       const userData = await loginService(dataObject);
-      setToken(userData.detail.token)
+      localStorage.setItem("token", userData.detail.token)
+      navigate("/Proyecto-5/")
     } else {
       const userData = await signupService(dataObject);
-      setToken(userData.detail.token)
+      localStorage.setItem("token", userData.detail.token)
+      navigate("/Proyecto-5/")
     }
   };
 
   return (
     <section>
-        <p>{token}</p>
       <form onSubmit={onSubmit}>
         <h3>{isMember ? "Login" : "Register"}</h3>
         {!isMember && (
           <div>
-            <label htmlFor="firstName">Name</label>
-            <input id="firstName" type="text" name="firstName"></input>
+            <div>
+              <label htmlFor="firstName">Nombre</label>
+              <input id="firstName" type="text" name="firstName"></input>
+            </div>
+            <div>
+              <label htmlFor="lastName">Apellido</label>
+              <input id="lastName" type="text" name="lastName"></input>
+            </div>
+
           </div>
         )}
         <div>
@@ -42,7 +53,7 @@ export const AuthForm = () => {
         </div>
         <button type="submit">Submit</button>
         <p>
-          {isMember ? "Not a member yet?" : "Already a member?"}
+          {isMember ? "Aun no estas registrado ?" : "Ya estas registrado?"}
           <button type="button" onClick={() => setIsMember(!isMember)}>
             {isMember ? "Register" : "Login"}
           </button>

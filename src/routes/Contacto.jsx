@@ -44,19 +44,19 @@ export const Contacto = () => {
             </div>
             <div className='row mx-4 mb-5 text-center'>
                 <div className='col mt-4'><h5>TELEFONO</h5>
-                <h7>+56 9 98554455</h7>
+                <h6>+56 9 98554455</h6>
                 </div>
                 <div className='col mt-4'>
                 <h5>UBICACION</h5>
-                <h7>Calle 2 1/3 Norte 4680, Talca</h7>
+                <h6>Calle 2 1/3 Norte 4680, Talca</h6>
                 </div>
                 <div className='col mt-4'>
                 <h5>CORREO</h5>
-                <h7>contacto@climbingworld.cl</h7>
+                <h6>contacto@climbingworld.cl</h6>
                 </div>
                 <div className='col mt-4'>
                 <h5>HORARIO</h5>
-                <h7>Lunes a Viernes de 09:00 a 18:00 Hrs</h7>
+                <h6>Lunes a Viernes de 09:00 a 18:00 Hrs</h6>
                 </div>
 
             </div>
