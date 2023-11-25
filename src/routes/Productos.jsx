@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import Card from "react-bootstrap/Card";
+import "./Productos.css"
+import { Link } from 'react-router-dom';
 
 export const Productos = () => {
   const [products, setProducts] = useState([]);
@@ -24,11 +26,19 @@ export const Productos = () => {
               className="mb-5 mt-3 m-5 p-0"
               key={product._id}
             >
-              <Card.Img variant="top" src={product.photo}/>
+              <Link style={{ textDecoration: "none" }} to={`/Proyecto-5/Productos/${product._id}`}>
+                <Card.Img variant="top" src={product.photo} />
+              </Link>
               <Card.Body>
-                <Card.Title>{product.title}</Card.Title>
-                <Card.Title>{product.price}</Card.Title>
-                <Card.Text>{product.body}</Card.Text>
+                <Link style={{ textDecoration: "none" }} to={`/Proyecto-5/Productos/${product._id}`}>
+                  <Card.Title id="titulo">{product.title}</Card.Title>
+                </Link>
+                <Card.Title id="valor">Valor: ${product.price}</Card.Title>
+                <div id="boton" >
+                  <Link style={{ textDecoration: "none" }} to={`/Proyecto-5/Productos/${product._id}`}>
+                    <button type="button" className="btn btn-light">Detalles</button>
+                  </Link>
+                </div>
               </Card.Body>
             </Card>
           ))}

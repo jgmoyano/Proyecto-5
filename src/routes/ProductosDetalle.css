@@ -1,0 +1,28 @@
+.container-card {
+    display: flex;
+    justify-content: center;
+
+}
+
+#detalle-card {
+    border: 1px solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 6px;
+    width: 70rem;
+}
+
+#boton{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#elboton{
+width: 200px;
+}
+
+@media (max-width:930px) {
+    .row {
+        flex-direction: column;
+    }
+}

@@ -8,6 +8,7 @@ import {Profile } from './routes/Profile'
 import { AuthForm } from './AuthForm'
 import { UserProvider, UserContext } from './context/UserContext'
 import { useContext } from 'react'
+import { ProductosDetalle } from './routes/ProductosDetalle'
 
 
 const ProtectedRoute = () => {
@@ -28,6 +29,7 @@ export const App = () => {
         <Routes>
           <Route path='/Proyecto-5/' element={<Home />} />
           <Route path='/Proyecto-5/productos' element={<Productos />} />
+          <Route path='/Proyecto-5/productos/:productoDetalleId' element={<ProductosDetalle />} />
           <Route path='/Proyecto-5/contacto' element={<Contacto />} />
           <Route path='/Proyecto-5/login' element={<AuthForm />} />
 

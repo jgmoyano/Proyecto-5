@@ -1,0 +1,19 @@
+#titulo {
+    color: rgb(255, 255, 255);
+    
+}
+
+#body{
+    height: 250px;
+}
+
+#valor {
+    color: #7ec6ff;
+}
+
+#boton {
+    display: flex;
+    justify-content: flex-end;
+    
+    
+}
