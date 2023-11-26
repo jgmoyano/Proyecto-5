@@ -30,7 +30,7 @@ export const ProductosDetalle = () => {
 
     const createPreference = async () => {
         try {
-            const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/create_preference`, {
+            const response = await axios.post(`https://api-autentication.onrender.com/create_preference`, {
                 description: producto.title,
                 price: producto.price,
                 quantity: 1,
