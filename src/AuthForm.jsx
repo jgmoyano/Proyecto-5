@@ -18,11 +18,11 @@ export const AuthForm = () => {
     if (isMember) {
       const userData = await loginService(dataObject);
       localStorage.setItem("token", userData.detail.token)
-      navigate("/Proyecto-5/")
+      navigate("https://jgmoyano.github.io/Proyecto-5/")
     } else {
       const userData = await signupService(dataObject);
       localStorage.setItem("token", userData.detail.token)
-      navigate("/Proyecto-5/")
+      navigate("https://jgmoyano.github.io/Proyecto-5/")
     }
   };
 
@@ -51,7 +51,9 @@ export const AuthForm = () => {
           <label htmlFor="password">Password</label>
           <input id="password" type="password" name="password"></input>
         </div>
-        <button type="submit">Submit</button>
+        <br />
+        <button type="submit">Ingresar</button>
+        <br />
         <p>
           {isMember ? "Aun no estas registrado ?" : "Ya estas registrado?"}
           <button type="button" onClick={() => setIsMember(!isMember)}>

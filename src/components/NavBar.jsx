@@ -21,7 +21,7 @@ export const NavBar = () => {
                 <Link className="nav-link text-light" to="/Proyecto-5/contacto"><h5>Contacto</h5></Link>
               </li>
               <li className="nav-item">
-                {isAuthenticated ? <span onClick={() => localStorage.removeItem("token")}>Cerrar sesión</span> : <Link className="nav-link text-light" to="/Proyecto-5/login"><h5>Iniciar Sesión</h5></Link> }
+                {isAuthenticated ? <Link className="nav-link text-light" to="/Proyecto-5/profile"><h5>👤 Mi Perfil</h5></Link> : <Link className="nav-link text-light" to="/Proyecto-5/login"><h5>Iniciar Sesión</h5></Link> }
               </li>
             </ul>
           </div>
