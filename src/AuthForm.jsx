@@ -18,11 +18,11 @@ export const AuthForm = () => {
     if (isMember) {
       const userData = await loginService(dataObject);
       localStorage.setItem("token", userData.detail.token)
-      navigate("https://jgmoyano.github.io/Proyecto-5/")
+      navigate("/Proyecto-5/")
     } else {
       const userData = await signupService(dataObject);
       localStorage.setItem("token", userData.detail.token)
-      navigate("https://jgmoyano.github.io/Proyecto-5/")
+      navigate("/Proyecto-5/")
     }
   };
 
