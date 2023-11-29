@@ -1,6 +1,6 @@
 import './NavBar.css'
 import logo from '../assets/logocw.png'
-import { Link } from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 export const NavBar = () => {
   const isAuthenticated = localStorage.getItem("token")

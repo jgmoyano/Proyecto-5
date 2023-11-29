@@ -1,16 +1,31 @@
-#root{
-background: url(../assets/fondocw.jpg);
-color: rgb(0, 0, 0);
-}
-h2{
-padding-top: 20px;
+#root {
+    background: url(../assets/fondocw.jpg);
+    color: rgb(0, 0, 0);
 }
 
-p{
-    max-width: 1000px;
+#col1{
+    width: 40%;
 }
 
-.containerparrafo{
-    display: flex;
-    justify-content: center;
+#col2{
+    width: 60%;
+}
+
+.imagenxmas{
+    height: 250px;
+    padding-left: 30px;;
+}
+
+h4 {
+    padding-left: 35px;
+    padding-top: 10px;
+    -webkit-text-fill-color: rgb(194, 194, 194)
+}
+
+.containerparrafo {
+    padding-left: 30px;
+}
+
+.imagenprincipal {
+    padding-right: 20px;
 }

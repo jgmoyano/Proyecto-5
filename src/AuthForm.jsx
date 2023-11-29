@@ -8,7 +8,9 @@ export const AuthForm = () => {
   const [isMember, setIsMember] = useState(false);
   const { token, setToken } = useContext(UserContext)
   const navigate = useNavigate();
-  
+
+
+
   const onSubmit = async (e) => {
     e.preventDefault();
 
@@ -18,49 +20,64 @@ export const AuthForm = () => {
     if (isMember) {
       const userData = await loginService(dataObject);
       localStorage.setItem("token", userData.detail.token)
+      localStorage.setItem("mail", document.getElementById("mail").value)
       navigate("/Proyecto-5/")
+      location.reload()
     } else {
       const userData = await signupService(dataObject);
       localStorage.setItem("token", userData.detail.token)
+      localStorage.setItem("mail", document.getElementById("mail").value)
       navigate("/Proyecto-5/")
+      location.reload()
     }
   };
 
   return (
-    <section>
-      <form onSubmit={onSubmit}>
-        <h3>{isMember ? "Login" : "Register"}</h3>
-        {!isMember && (
-          <div>
-            <div>
-              <label htmlFor="firstName">Nombre</label>
-              <input id="firstName" type="text" name="firstName"></input>
-            </div>
-            <div>
-              <label htmlFor="lastName">Apellido</label>
-              <input id="lastName" type="text" name="lastName"></input>
-            </div>
+    <>
+      <div className="seccion">
+        <section>
+          <form onSubmit={onSubmit}>
+            <h3>{isMember ? "Login" : "Register"}</h3>
+            {!isMember && (
+              <div>
+                <div>
+                  <label htmlFor="firstName">Nombre</label>
+                  <input id="firstName" type="text" name="firstName"></input>
+                </div>
+                <div>
+                  <label htmlFor="lastName">Apellido</label>
+                  <input id="lastName" type="text" name="lastName"></input>
+                </div>
 
-          </div>
-        )}
-        <div>
-          <label htmlFor="mail">Email</label>
-          <input id="mail" type="text" name="mail"></input>
-        </div>
-        <div>
-          <label htmlFor="password">Password</label>
-          <input id="password" type="password" name="password"></input>
-        </div>
-        <br />
-        <button type="submit">Ingresar</button>
-        <br />
-        <p>
-          {isMember ? "Aun no estas registrado ?" : "Ya estas registrado?"}
-          <button type="button" onClick={() => setIsMember(!isMember)}>
-            {isMember ? "Register" : "Login"}
-          </button>
-        </p>
-      </form>
-    </section>
+              </div>
+            )}
+            <div>
+              <label htmlFor="mail">Email</label>
+              <input id="mail" type="text" name="mail"></input>
+            </div>
+            <div>
+              <label htmlFor="password">Password</label>
+              <input id="password" type="password" name="password"></input>
+            </div>
+            <br />
+            <button type="submit">Ingresar</button>
+            <br />
+            <p>
+              {isMember ? "Aun no estas registrado ?" : "Ya estas registrado?"}
+              <button type="button" onClick={() => setIsMember(!isMember)}>
+                {isMember ? "Register" : "Login"}
+              </button>
+            </p>
+          </form>
+        </section>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </>
   );
 };

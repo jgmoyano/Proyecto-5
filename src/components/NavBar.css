@@ -1,5 +1,6 @@
 .navbar {
     background: url(../assets/fondocw.jpg);
+    height: 110px;
 }
 
 .navbar img{
@@ -19,6 +20,7 @@
 
 .navbar-expand .navbar-collapse{
     justify-content: end;
+    padding-right: 20px;
 }
 
 .nav-link {
