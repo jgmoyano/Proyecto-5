@@ -11,6 +11,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@mercadopago/sdk-react": "^0.0.15",
     "axios": "^1.6.2",
     "bootstrap": "^5.3.1",

@@ -4,15 +4,15 @@
 }
 
 #col1{
-    width: 40%;
-}
-
-#col2{
     width: 60%;
 }
 
+#col2{
+    width: 40%;
+}
+
 .imagenxmas{
-    height: 250px;
+    width: 100%;
     padding-left: 30px;;
 }
 
@@ -28,4 +28,30 @@ h4 {
 
 .imagenprincipal {
     padding-right: 20px;
+    width: 100%;
+}
+
+.iconos{
+    max-height: 120px;
+    padding: 20px;
+    
+}
+
+.container-iconos{
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between
+
+}
+
+@media (max-width:660px) {
+    .container-iconos {
+     display: contents;
+    }
+    .iconos{
+        width: 100px;
+    }
+    h4{
+    display: none;
+    }
 }
