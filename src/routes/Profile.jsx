@@ -1,12 +1,14 @@
 import axios from 'axios'
 import Card from "react-bootstrap/Card";
 import { useEffect, useState } from 'react'
+import { useNavigate } from "react-router-dom";
 
 export const Profile = () => {
 
   const localToken = localStorage.getItem("token")
   const localMail = localStorage.getItem("mail")
   const [users, setUsers] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     async function getUsers() {
@@ -22,8 +24,6 @@ export const Profile = () => {
 
   const user = users.find(user => user.mail === localMail)
   if (!user) return null
-
-  console.log(user)
 
   return (
     <>
@@ -51,6 +51,7 @@ export const Profile = () => {
                   <button id="elboton" onClick={() => {
                     localStorage.removeItem("token")
                     localStorage.removeItem("mail")
+                    navigate("/Proyecto-5/")
                     location.reload()
                   }} type="button" className="btn btn-light">Cerrar Sesión</button>
                 </div>
