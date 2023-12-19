@@ -1,25 +1,31 @@
 #root {
     background: url(../assets/fondocw.jpg);
+    background-attachment: fixed;
     color: rgb(0, 0, 0);
 }
 
-#col1{
-    width: 60%;
-}
-
-#col2{
-    width: 40%;
-}
-
-.imagenxmas{
+#row {
     width: 100%;
-    padding-left: 30px;;
+    margin: 0px !important;
+}
+
+.imagenxmas {
+    width: 100%;
+}
+
+.imagenxmas2 {
+    display: none;
 }
 
 h4 {
-    padding-left: 35px;
     padding-top: 10px;
     -webkit-text-fill-color: rgb(194, 194, 194)
+}
+
+.container {
+    width: 75vw;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .containerparrafo {
@@ -27,31 +33,47 @@ h4 {
 }
 
 .imagenprincipal {
-    padding-right: 20px;
     width: 100%;
+    max-width: 650px;
 }
 
-.iconos{
-    max-height: 120px;
-    padding: 20px;
-    
-}
+.iconos {
+    max-width: 20%;
 
-.container-iconos{
-    padding-left: 20px;
-    display: flex;
-    justify-content: space-between
+    padding-top: 20px;
+    padding-bottom: 20px;
 
 }
 
-@media (max-width:660px) {
-    .container-iconos {
-     display: contents;
+@media (max-width:1195px) {
+    .col h4 {
+        font-size: 15px;
     }
-    .iconos{
-        width: 100px;
+}
+
+@media (max-width:800px) {
+    .col h4 {
+        font-size: 12px;
     }
-    h4{
-    display: none;
+    .iconos {
+        width: 50px;
     }
+}
+
+@media (max-width:550px) {
+    .imagenxmas {
+        display: none;
+    }
+    .imagenxmas2 {
+        display: flex;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width:450px) {
+#row{
+    display: block;
+}
 }

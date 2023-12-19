@@ -61,7 +61,7 @@ export const ProductosDetalle = () => {
                     className="mb-5 mt-3 m-5 p-0"
 
                 >
-                    <div className='row'>
+                    <div id='prod-row' className='row'>
                         <div className='col'>
                             <Card.Img variant="top" src={producto.photo} />
                         </div>

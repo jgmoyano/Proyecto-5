@@ -1,6 +1,7 @@
 .navbar {
     background: url(../assets/fondocw.jpg);
     height: 110px;
+    width: 100%;
 }
 
 .navbar img {
@@ -20,7 +21,6 @@
 
 .navbar-expand .navbar-collapse {
     justify-content: end;
-    padding-right: 20px;
 }
 
 .nav-link {
@@ -39,10 +39,53 @@ a.nav-link.dropdown-toggle.text-light {
 @media (max-width:700px) {
     .container-fluid {
         display: flex;
-        flex-direction: column;
+        flex-direction: column; 
     }
 
     .navbar img {
-        padding-top: 50px;
+        padding-top: 10px;
+        height: 50px;
     }
+
+}
+
+@media (max-width:425px) {
+
+    #navbar-home{
+        display: none;
+    }
+
+    .navbar h5{
+        font-size: 19px;
+        
+    }
+    
+}
+
+@media (max-width:345px) {
+
+    .navbar img {
+        
+        height: 40px;
+    }
+
+    .navbar h5{
+        font-size: 16px;
+        
+    }
+    
+}
+
+@media (max-width:299px) {
+
+    .navbar img {
+        
+        height: 30px;
+    }
+
+    .navbar h5{
+        font-size: 13px;
+        
+    }
+    
 }

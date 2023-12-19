@@ -8,10 +8,12 @@ export const NavBar = () => {
     <div className='navbar-fluid'>
       <nav className="navbar navbar-expand">
         <div className="container-fluid">
+        <Link to="/Proyecto-5">
           <img src={logo} alt="" />
+          </Link>
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
-              <li className="nav-item">
+              <li id='navbar-home' className="nav-item">
                 <Link className="nav-link active text-light" aria-current="page" to="/Proyecto-5/"><h5>Home</h5></Link>
               </li>
               <li className="nav-item">

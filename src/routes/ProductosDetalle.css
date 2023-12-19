@@ -22,7 +22,7 @@ width: 200px;
 }
 
 @media (max-width:930px) {
-    .row {
+    #prod-row {
         flex-direction: column;
     }
 }
